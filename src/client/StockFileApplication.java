@@ -27,8 +27,8 @@ public class StockFileApplication {
 	 * @return List
 	 */
 	public static List<HashMap<String, Double>> populateStockFileData(List<String> headers, List<String> lines){
-		List<HashMap<String, Double>> dataResultList = new ArrayList<HashMap<String, Double>>();
-		System.out.println("inside of populateStockFileData() function ");
+		List<HashMap<String, Double>> dataResultList = new ArrayList<>();
+		//System.out.println("inside of populateStockFileData() function ");
 //		System.out.println("1. output headers List. ");
 //		for(int i=0 ; i<headers.size() ; i++){
 //			System.out.println("i=" + Integer.toString(i) + " " + headers.get(i) );
@@ -38,12 +38,15 @@ public class StockFileApplication {
 //			System.out.println(lines.get(i));
 //		}
 
-		HashMap<String,Double> myMap = new HashMap<>();
-		for(int i=0 ; i<lines.size() ; i++){
+
+
+		for(String oneLine: lines){  // oneLine - is our variable which changes its value through iteration
 			//System.out.println(lines.get(i));
-			String [] myNumbers = lines.get(i).split(",");
-			for( int k = 0 ; k < myNumbers.length ; k++ ){
-				myMap.put( headers.get(k) , Double.parseDouble(myNumbers[k]) );
+			String [] myNumbers = oneLine.split(","); // for example: 141.479996,141.880005,140.869995,141.830002,16424000,141.830002
+			int cnt = 0; // counter
+			HashMap<String,Double> myMap = new HashMap<>();
+			for(String aValue: myNumbers){
+				myMap.put( headers.get(cnt++) , Double.parseDouble(aValue) ); // aValue - is changing through iteration
 //				System.out.print("k=" + k + " ");
 //				System.out.print(" " + headers.get(k) + " ");
 //				System.out.print("headers.get(k)="+headers.get(k)+" ");

@@ -47,32 +47,22 @@ public class StockFileReader {
 
 		// Insert your code here..
 
-
-		BufferedReader br = new BufferedReader(new FileReader(filePath));
-			int nString = 0;
+			//int nString = 0; // strings counter
 			//int showIndex = nString;
 			List<String> lines = new ArrayList<>() ;
 			String oneLine;
 
-			try {
+			try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
+				// now we use "try with resources"
+				br.readLine(); // skip the first line
 				while( ( oneLine = br.readLine() ) != null ){
 					//System.out.print( "nString = " +  nString  + " ");
-					nString++;
+					//nString++;
 					//System.out.println(oneLine);
-					if(oneLine.equals("Open,High,Low,Close,Volume,Adj Close"))
-						continue;
-					else
+
 					lines.add(oneLine);
 				}
-			} catch (IOException e){
-				e.fillInStackTrace();
 			}
-
-
-
-
-
-
 	    return lines;
 	}
 	
