@@ -16,16 +16,10 @@ public class StockFileReader {
 	}
 	
 	public List<String> getHeaders() throws IOException{
-		//System.out.println("getHeaders() called ... ");
 		String line = readFirstLine(filePath);
 		String [] header = line.split(",");
-		List<String> values;
+		List<String> values = new ArrayList<String>();
 		values = Arrays.asList(header);
-
-//		for( int i = 0 ; i < values.size() ; i++ ){
-//			System.out.println(values.get(i));
-//		}
-
 		return values;
 	}
 	
@@ -35,34 +29,22 @@ public class StockFileReader {
 	        return br.readLine();
 	    }
 	}
-
-
 	/**
 	 * Complete the body of this method.
 	 * @return List
 	 * @throws IOException
 	 */
 	public List<String> readFileData() throws IOException{
-		//System.out.println("readFileData()called ... ");
-
-		// Insert your code here..
-
-			//int nString = 0; // strings counter
-			//int showIndex = nString;
-			List<String> lines = new ArrayList<>() ;
-			String oneLine;
-
-			try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
-				// now we use "try with resources"
-				br.readLine(); // skip the first line
-				while( ( oneLine = br.readLine() ) != null ){
-					//System.out.print( "nString = " +  nString  + " ");
-					//nString++;
-					//System.out.println(oneLine);
-
-					lines.add(oneLine);
-				}
+		List<String> lines = new ArrayList<String>();
+		try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
+			//skip the first line:
+			br.readLine();
+			String line = null;
+			// populate data from next line onwards
+			while((line = br.readLine()) != null){
+				lines.add(line);
 			}
+		}
 	    return lines;
 	}
 	
