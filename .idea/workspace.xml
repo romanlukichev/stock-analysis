@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54a2904b-7a8b-4fe7-abe2-bf001266c97b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/aggregators/Aggregator.class" afterPath="$PROJECT_DIR$/bin/aggregators/Aggregator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/aggregators/MaxAggregator.class" afterPath="$PROJECT_DIR$/bin/aggregators/MaxAggregator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/aggregators/MeanAggregator.class" afterPath="$PROJECT_DIR$/bin/aggregators/MeanAggregator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/aggregators/MinAggregator.class" afterPath="$PROJECT_DIR$/bin/aggregators/MinAggregator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/client/Application.class" afterPath="$PROJECT_DIR$/bin/client/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/client/StockFileApplication.class" afterPath="$PROJECT_DIR$/bin/client/StockFileApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/fileprocessors/StockFileReader.class" afterPath="$PROJECT_DIR$/bin/fileprocessors/StockFileReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/aggregators/AggregatorProcessor.class" afterPath="$PROJECT_DIR$/bin/aggregators/AggregatorProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/client/AggregatorApp.class" afterPath="$PROJECT_DIR$/bin/client/AggregatorApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregators/Aggregator.java" afterPath="$PROJECT_DIR$/src/aggregators/Aggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregators/MaxAggregator.java" afterPath="$PROJECT_DIR$/src/aggregators/MaxAggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregators/MeanAggregator.java" afterPath="$PROJECT_DIR$/src/aggregators/MeanAggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregators/MinAggregator.java" afterPath="$PROJECT_DIR$/src/aggregators/MinAggregator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/Application.java" afterPath="$PROJECT_DIR$/src/client/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/StockFileApplication.java" afterPath="$PROJECT_DIR$/src/client/StockFileApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fileprocessors/StockFileReader.java" afterPath="$PROJECT_DIR$/src/fileprocessors/StockFileReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregators/AggregatorProcessor.java" afterPath="$PROJECT_DIR$/src/aggregators/AggregatorProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/AggregatorApp.java" afterPath="$PROJECT_DIR$/src/client/AggregatorApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,9 +22,11 @@
       <file leaf-file-name="AggregatorProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aggregators/AggregatorProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="82" lean-forward="true" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
-              <folding />
+            <state relative-caret-position="462">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,8 +34,8 @@
       <file leaf-file-name="AggregatorApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/AggregatorApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="269">
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +49,10 @@
             <state relative-caret-position="726">
               <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="36" />
               <folding>
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="false" />
+                <element signature="e#196#197#0" expanded="false" />
+                <element signature="e#240#241#0" expanded="false" />
+                <element signature="e#287#288#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,12 +61,32 @@
       <file leaf-file-name="MaxAggregator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aggregators/MaxAggregator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="33">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeanAggregator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aggregators/MeanAggregator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinAggregator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aggregators/MinAggregator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +96,51 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4158">
               <caret line="149" column="11" lean-forward="false" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
-              <folding />
+              <folding>
+                <element signature="e#0#42430#0" expanded="false" />
+                <element signature="e#9376#9377#0" expanded="false" />
+                <element signature="e#9403#9404#0" expanded="false" />
+                <element signature="e#9585#9586#0" expanded="false" />
+                <element signature="e#9617#9618#0" expanded="false" />
+                <element signature="e#10094#10095#0" expanded="false" />
+                <element signature="e#10132#10133#0" expanded="false" />
+                <element signature="e#12774#12775#0" expanded="false" />
+                <element signature="e#12829#12830#0" expanded="false" />
+                <element signature="e#14647#14648#0" expanded="false" />
+                <element signature="e#14692#14693#0" expanded="false" />
+                <element signature="e#23782#23783#0" expanded="false" />
+                <element signature="e#23836#23837#0" expanded="false" />
+                <element signature="e#24679#24680#0" expanded="false" />
+                <element signature="e#24723#24724#0" expanded="false" />
+                <element signature="e#25680#25681#0" expanded="false" />
+                <element signature="e#25723#25724#0" expanded="false" />
+                <element signature="e#29510#29511#0" expanded="false" />
+                <element signature="e#29547#29548#0" expanded="false" />
+                <element signature="e#29847#29848#0" expanded="false" />
+                <element signature="e#29879#29880#0" expanded="false" />
+                <element signature="e#30204#30205#0" expanded="false" />
+                <element signature="e#30249#30250#0" expanded="false" />
+                <element signature="e#31610#31611#0" expanded="false" />
+                <element signature="e#31652#31653#0" expanded="false" />
+                <element signature="e#31686#31687#0" expanded="false" />
+                <element signature="e#31723#31724#0" expanded="false" />
+                <element signature="e#31761#31762#0" expanded="false" />
+                <element signature="e#31802#31803#0" expanded="false" />
+                <element signature="e#37291#37292#0" expanded="false" />
+                <element signature="e#37342#37343#0" expanded="false" />
+                <element signature="e#37784#37785#0" expanded="false" />
+                <element signature="e#37829#37830#0" expanded="false" />
+                <element signature="e#38234#38235#0" expanded="false" />
+                <element signature="e#38308#38309#0" expanded="false" />
+                <element signature="e#38948#38949#0" expanded="false" />
+                <element signature="e#39006#39007#0" expanded="false" />
+                <element signature="e#39627#39628#0" expanded="false" />
+                <element signature="e#39680#39681#0" expanded="false" />
+                <element signature="e#39726#39727#0" expanded="false" />
+                <element signature="e#39783#39784#0" expanded="false" />
+                <element signature="e#42175#42176#0" expanded="false" />
+                <element signature="e#42242#42243#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +160,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/fileprocessors/StockFileReader.java" />
         <option value="$PROJECT_DIR$/src/client/StockFileApplication.java" />
-        <option value="$PROJECT_DIR$/src/client/AggregatorApp.java" />
         <option value="$PROJECT_DIR$/src/aggregators/AggregatorProcessor.java" />
+        <option value="$PROJECT_DIR$/src/client/AggregatorApp.java" />
+        <option value="$PROJECT_DIR$/src/aggregators/MaxAggregator.java" />
       </list>
     </option>
   </component>
@@ -137,7 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -207,7 +263,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,33 +771,35 @@
       <workItem from="1510358690168" duration="2179000" />
       <workItem from="1510440247795" duration="6749000" />
       <workItem from="1510460899505" duration="3391000" />
-      <workItem from="1510532877521" duration="1553000" />
+      <workItem from="1510532877521" duration="2680000" />
+      <workItem from="1510600664999" duration="4515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61439000" />
+    <option name="totallyTimeSpent" value="67081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="2568" height="1388" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16098335" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23515625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23515625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="75" y="121" width="348" height="1053" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="75" y="121" width="348" height="1053" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15701824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -752,9 +810,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -778,8 +834,14 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/aggregators/MeanAggregator.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -793,10 +855,10 @@
         <state relative-caret-position="264">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="false" />
+            <element signature="e#196#197#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,7 +867,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4917">
           <caret line="149" column="11" lean-forward="false" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="e#0#42430#0" expanded="false" />
+            <element signature="e#9376#9377#0" expanded="false" />
+            <element signature="e#9403#9404#0" expanded="false" />
+            <element signature="e#9585#9586#0" expanded="false" />
+            <element signature="e#9617#9618#0" expanded="false" />
+            <element signature="e#10094#10095#0" expanded="false" />
+            <element signature="e#10132#10133#0" expanded="false" />
+            <element signature="e#12774#12775#0" expanded="false" />
+            <element signature="e#12829#12830#0" expanded="false" />
+            <element signature="e#14647#14648#0" expanded="false" />
+            <element signature="e#14692#14693#0" expanded="false" />
+            <element signature="e#23782#23783#0" expanded="false" />
+            <element signature="e#23836#23837#0" expanded="false" />
+            <element signature="e#24679#24680#0" expanded="false" />
+            <element signature="e#24723#24724#0" expanded="false" />
+            <element signature="e#25680#25681#0" expanded="false" />
+            <element signature="e#25723#25724#0" expanded="false" />
+            <element signature="e#29510#29511#0" expanded="false" />
+            <element signature="e#29547#29548#0" expanded="false" />
+            <element signature="e#29847#29848#0" expanded="false" />
+            <element signature="e#29879#29880#0" expanded="false" />
+            <element signature="e#30204#30205#0" expanded="false" />
+            <element signature="e#30249#30250#0" expanded="false" />
+            <element signature="e#31610#31611#0" expanded="false" />
+            <element signature="e#31652#31653#0" expanded="false" />
+            <element signature="e#31686#31687#0" expanded="false" />
+            <element signature="e#31723#31724#0" expanded="false" />
+            <element signature="e#31761#31762#0" expanded="false" />
+            <element signature="e#31802#31803#0" expanded="false" />
+            <element signature="e#37291#37292#0" expanded="false" />
+            <element signature="e#37342#37343#0" expanded="false" />
+            <element signature="e#37784#37785#0" expanded="false" />
+            <element signature="e#37829#37830#0" expanded="false" />
+            <element signature="e#38234#38235#0" expanded="false" />
+            <element signature="e#38308#38309#0" expanded="false" />
+            <element signature="e#38948#38949#0" expanded="false" />
+            <element signature="e#39006#39007#0" expanded="false" />
+            <element signature="e#39627#39628#0" expanded="false" />
+            <element signature="e#39680#39681#0" expanded="false" />
+            <element signature="e#39726#39727#0" expanded="false" />
+            <element signature="e#39783#39784#0" expanded="false" />
+            <element signature="e#42175#42176#0" expanded="false" />
+            <element signature="e#42242#42243#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -813,7 +919,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -822,10 +930,10 @@
         <state relative-caret-position="330">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="false" />
+            <element signature="e#196#197#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1137,41 +1245,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregators/MeanAggregator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="149" column="11" lean-forward="false" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aggregators/Aggregator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="false" />
+            <element signature="e#196#197#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregators/MaxAggregator.java">
+    <entry file="file://$PROJECT_DIR$/src/aggregators/MeanAggregator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,13 +1273,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4158">
+          <caret line="149" column="11" lean-forward="false" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#42430#0" expanded="false" />
+            <element signature="e#9376#9377#0" expanded="false" />
+            <element signature="e#9403#9404#0" expanded="false" />
+            <element signature="e#9585#9586#0" expanded="false" />
+            <element signature="e#9617#9618#0" expanded="false" />
+            <element signature="e#10094#10095#0" expanded="false" />
+            <element signature="e#10132#10133#0" expanded="false" />
+            <element signature="e#12774#12775#0" expanded="false" />
+            <element signature="e#12829#12830#0" expanded="false" />
+            <element signature="e#14647#14648#0" expanded="false" />
+            <element signature="e#14692#14693#0" expanded="false" />
+            <element signature="e#23782#23783#0" expanded="false" />
+            <element signature="e#23836#23837#0" expanded="false" />
+            <element signature="e#24679#24680#0" expanded="false" />
+            <element signature="e#24723#24724#0" expanded="false" />
+            <element signature="e#25680#25681#0" expanded="false" />
+            <element signature="e#25723#25724#0" expanded="false" />
+            <element signature="e#29510#29511#0" expanded="false" />
+            <element signature="e#29547#29548#0" expanded="false" />
+            <element signature="e#29847#29848#0" expanded="false" />
+            <element signature="e#29879#29880#0" expanded="false" />
+            <element signature="e#30204#30205#0" expanded="false" />
+            <element signature="e#30249#30250#0" expanded="false" />
+            <element signature="e#31610#31611#0" expanded="false" />
+            <element signature="e#31652#31653#0" expanded="false" />
+            <element signature="e#31686#31687#0" expanded="false" />
+            <element signature="e#31723#31724#0" expanded="false" />
+            <element signature="e#31761#31762#0" expanded="false" />
+            <element signature="e#31802#31803#0" expanded="false" />
+            <element signature="e#37291#37292#0" expanded="false" />
+            <element signature="e#37342#37343#0" expanded="false" />
+            <element signature="e#37784#37785#0" expanded="false" />
+            <element signature="e#37829#37830#0" expanded="false" />
+            <element signature="e#38234#38235#0" expanded="false" />
+            <element signature="e#38308#38309#0" expanded="false" />
+            <element signature="e#38948#38949#0" expanded="false" />
+            <element signature="e#39006#39007#0" expanded="false" />
+            <element signature="e#39627#39628#0" expanded="false" />
+            <element signature="e#39680#39681#0" expanded="false" />
+            <element signature="e#39726#39727#0" expanded="false" />
+            <element signature="e#39783#39784#0" expanded="false" />
+            <element signature="e#42175#42176#0" expanded="false" />
+            <element signature="e#42242#42243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aggregators/MaxAggregator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/AggregatorApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="269">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1195,9 +1349,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aggregators/AggregatorProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="82" lean-forward="true" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

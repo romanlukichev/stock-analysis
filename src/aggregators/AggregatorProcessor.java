@@ -1,6 +1,9 @@
 package aggregators;
+import fileprocessors.StockFileReader;
+import java.io.IOException;
+import java.util.List;
 
-public class AggregatorProcessor <AggregatorType>  {
+public class AggregatorProcessor <AggregatorType extends Aggregator>  {
     //AggregatorProcessor<MinAggregator> aggsProcessor = new AggregatorProcessor<MinAggregator>(agg, "table.csv");
 
     private AggregatorType myAggregator ;
@@ -15,7 +18,18 @@ public class AggregatorProcessor <AggregatorType>  {
 
 
 
-    public double runAggregator(int inValue){
-        return polymorphycAgreggator.calculate();
+    public double runAggregator(int inIndex) throws IOException{
+        StockFileReader fileReader = new  StockFileReader(myInputFile);
+        List<String> lines = fileReader.readFileData();
+        inIndex--;
+
+        for(String line: lines){
+            String [] numbers = line.split(",");
+            double value = Double.parseDouble(numbers[inIndex]);
+            myAggregator.add(value);
+        }
+
+
+        return myAggregator.calculate();
     }
 }

@@ -3,7 +3,7 @@ package client;
 import java.io.IOException;
 
 import aggregators.AggregatorProcessor;
-import aggregators.MinAggregator;
+import aggregators.MaxAggregator;
 
 public class AggregatorApp {
 
@@ -20,8 +20,8 @@ public class AggregatorApp {
 			-->> YOUR WORK SHOULD BE DONE IN THE AggregatorProcessor CLASS. 
 		**/
 
-		MinAggregator agg = new MinAggregator();
-		AggregatorProcessor<MinAggregator> aggsProcessor = new AggregatorProcessor<MinAggregator>(agg, "table.csv");
+		MaxAggregator agg = new MaxAggregator();
+		AggregatorProcessor<MaxAggregator> aggsProcessor = new AggregatorProcessor<MaxAggregator>(agg, "table.csv");
 		double value = aggsProcessor.runAggregator(1);
 		System.out.println(value);
 	
